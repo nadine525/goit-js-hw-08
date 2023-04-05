@@ -14,6 +14,7 @@ function onFormInput(event) {
 
 if (storageData) {
   email.value = storageData.email;
+  message.value = storageData.message;
 }
 
 form.addEventListener('input', throttle(onFormInput, 500));
